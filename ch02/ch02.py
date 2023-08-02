@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import mglearn.datasets
 
 #generating a data set
+'''
 X, y = mglearn.datasets.make_forge()
 
 #plot dataset
@@ -11,4 +12,12 @@ plt.legend(["Class 0", "Class 1"], loc = 4)
 plt.xlabel("First feature")
 plt.ylabel("Second feature")
 print("X.shape:", X.shape)
+plt.show()
+'''
+X, y = mglearn.datasets.make_wave(n_samples=40)
+plt.plot(X,y,'o')
+plt.ylim(-3,3)
+plt.xlabel("Feature")
+plt.ylabel("Target")
+
 plt.show()
