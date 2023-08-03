@@ -14,4 +14,5 @@ print("Data shape: ", data.shape)
 X, y = mglearn.datasets.load_extended_boston()
 print("X.shape: ", X.shape)
 
+mglearn.plots.plot_knn_regression(n_neighbors=1)
 
